@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequiredArgsConstructor
 public class BookController {
 
-    public final BookService bookService;
+    private final BookService bookService;
 
     @GetMapping("/books")
     public String getBookList(Model model) {
