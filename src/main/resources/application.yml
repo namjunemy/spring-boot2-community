@@ -1,5 +1,6 @@
 server:
   port: 80
+
 ---
 spring:
   profiles: local
@@ -16,6 +17,7 @@ spring:
 server:
   port: 8082
 ---
+
 fruit:
   list:
     - name: banana
@@ -24,3 +26,11 @@ fruit:
       color: red
     - name: water melon
       color: green
+
+datasource:
+  url: jdbc:h2:mem:testdb
+
+spring:
+  h2:
+    console:
+      enabled: true
